@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ThaiFACTUAL | EMNLP 2025</title>
+<link rel="icon"
+href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🇹🇭</text></svg>">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="bg-grid"></div>
+
+<header class="hero">
+  <nav>
+    <div class="logo">🇹🇭 ThaiFACTUAL</div>
+    <div class="nav-links">
+      <a href="#overview">Overview</a>
+      <a href="#method">Method</a>
+      <a href="#results">Results</a>
+      <a href="#paper">Paper</a>
+    </div>
+  </nav>
+
+  <div class="hero-content">
+    <span class="badge">🎉 EMNLP 2025 Workshop Accepted</span>
+    <h1>ThaiFACTUAL</h1>
+    <h2>Debiasing Large Language Models in Thai Political Stance Detection via Counterfactual Calibration</h2>
+    <p>
+      A lightweight, model-agnostic framework that mitigates sentiment leakage and political entity bias
+      in Thai political stance detection.
+    </p>
+
+    <div class="buttons">
+      <a class="btn primary"
+        href="https://aclanthology.org/2025.winlp-main.13/"
+        target="_blank"
+        rel="noopener noreferrer">
+        📄 Paper
+      </a>
+
+      <a class="btn"
+        href="https://github.com/kaopanboonyuen/ThaiFACTUAL"
+        target="_blank"
+        rel="noopener noreferrer">
+        💻 Code
+      </a>
+
+      <a class="btn"
+        href="https://github.com/kaopanboonyuen/ThaiFACTUAL"
+        target="_blank"
+        rel="noopener noreferrer">
+        📊 Dataset
+      </a>
+    </div>
+  </div>
+</header>
+
+<section class="stats">
+  <div class="card"><h3>270</h3><p>Annotated Samples</p></div>
+  <div class="card"><h3>3</h3><p>Political Figures</p></div>
+  <div class="card"><h3>73.5</h3><p>Macro-F1</p></div>
+  <div class="card"><h3>55%</h3><p>Bias Reduction</p></div>
+</section>
+
+<section id="overview" class="section">
+<h2>Overview</h2>
+<p>
+Thai political discourse presents unique challenges for LLMs due to sentiment-stance entanglement,
+indirect language, and entity preference bias. ThaiFACTUAL introduces counterfactual calibration
+to disentangle political stance from emotional tone.
+</p>
+</section>
+
+<section id="method" class="section">
+<h2>Method</h2>
+
+<div class="pipeline">
+<div>Tweet</div>
+<div>↓</div>
+<div>LLM Prediction</div>
+<div>↓</div>
+<div>Counterfactual Swap</div>
+<div>↓</div>
+<div>Rationale Calibration</div>
+<div>↓</div>
+<div>Debiased Stance</div>
+</div>
+
+</section>
+
+<section class="section">
+<h2>Bias Demonstration</h2>
+
+<div class="comparison">
+<div class="glass">
+<h3>❌ Raw LLM</h3>
+<p>Positive sentiment → Support</p>
+<p>Negative sentiment → Against</p>
+<p>Political entity strongly influences prediction.</p>
+</div>
+
+<div class="glass">
+<h3>✅ ThaiFACTUAL</h3>
+<p>Sentiment separated from stance.</p>
+<p>Counterfactual reasoning applied.</p>
+<p>More consistent and fair predictions.</p>
+</div>
+</div>
+
+</section>
+
+<section id="results" class="section">
+<h2>Results</h2>
+
+<table>
+<tr>
+<th>Model</th>
+<th>Bias ↓</th>
+<th>F1 ↑</th>
+<th>OOD ↑</th>
+</tr>
+
+<tr>
+<td>GPT-4</td>
+<td>21.7</td>
+<td>70.8</td>
+<td>56.4</td>
+</tr>
+
+<tr>
+<td>GPT-4 Debias Prompt</td>
+<td>18.3</td>
+<td>71.9</td>
+<td>57.0</td>
+</tr>
+
+<tr>
+<td>LLaMA-3 CoT</td>
+<td>16.5</td>
+<td>68.1</td>
+<td>59.7</td>
+</tr>
+
+<tr class="winner">
+<td>ThaiFACTUAL</td>
+<td>9.8</td>
+<td>73.5</td>
+<td>65.2</td>
+</tr>
+
+</table>
+</section>
+
+<section id="paper" class="section">
+<h2>Paper & Citation</h2>
+<p>
+Debiasing Large Language Models in Thai Political Stance Detection via Counterfactual Calibration
+</p>
+
+<pre>
+@inproceedings{panboonyuen2025thaifactual,
+ title={ThaiFACTUAL},
+ author={Teerapong Panboonyuen},
+ booktitle={EMNLP 2025 Workshop}
+}
+</pre>
+</section>
+
+<section class="section author">
+<h2>Author</h2>
+<div class="glass">
+<h3>Teerapong Panboonyuen</h3>
+<p>Chulalongkorn University</p>
+<p>MARSAIL Laboratory</p>
+</div>
+</section>
+
+<footer>
+Built with ❤️ by Kao Panboonyuen • EMNLP 2025
+</footer>
+
+</body>
+</html>
