@@ -5,7 +5,6 @@
 > Accepted at **EMNLP 2025 – Widening NLP (WiNLP) Workshop**, Suzhou, China  
 > Author: **Teerapong Panboonyuen** (aka Kao Panboonyuen)  
 > Affiliation: Chulalongkorn University & MARSAIL  
-> Contact: teerapong.pa@chula.ac.th
 
 ---
 
